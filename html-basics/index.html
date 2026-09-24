@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İlk Web Sistem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title">Benim ilk web sitem</h1>
+    </header>
+
+    <button id="degistir">Başlığı değiştir</button>
+    <input id="isimInput" type="text" placeholder="Adını yaz">
+    <buton id="selamlaButon">Selamla</buton>
+    <p id="selamMesaji"></p>
+
+
+
+    <!-- Sayfa navigasyonu -->
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="about.html">Hakkımda</a>
+    </nav>
+
+    <main>
+
+        <h2>Hoş Geldin!</h2>
+        <p class="description">Bu benim ilk HTML sayfam.</p>
+
+        <section>
+            <h3>Hakkımda</h3>
+            <p class="abc1">Yazılım öğreniyorum ve kendi projelerimi geliştiriyorum</p>
+        </section>
+
+        <h3>Öğrendiğim teknolojiler</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>Git</li>
+            <li>API</li>
+        </ul>
+        <section class="products">
+            <h2>Ürünler</h2>
+
+            <div class="product-card featured">
+                <span class="badge">NEW</span>
+                <h3>Laptop</h3>
+                <p>1200 eur</p>
+            </div>
+
+            <div class="product-card">
+                <h3>Telefon</h3>
+                <p>800 eur</p>
+            </div>
+
+            
+        </section>
+
+        <section>
+            <h2>İletişim</h2>
+
+            <form action="/contact" method="post">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" placeholder="E-Posta adresiinizi girin yoksa sikerim" required>
+
+                <label for="age">Yaş:</label>
+                <input type="number" id="age">
+
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    Şartları kabul ediyorum
+                </label>
+
+                <button type="submit">Gönder</button>
+
+                <p class="abc1">Cinsiyet:</p>
+
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="male">
+                    Erkek
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="female">
+                    Kadın
+                </label>
+
+                <label for="city">Şehir:</label>
+
+                <select id="city" name="city">
+                    <option value="bamberg">Bamberg</option>
+                    <option value="nurnberg">Nürnberg</option>
+                    <option value="munich">Münih</option>
+                    <option value="antep">Antep</option>
+                </select>
+
+                <label for="message">Mesaj</label>
+                <textarea id="message" name="message"></textarea>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Benim İlk Web Sitem</p>
+    </footer>
+<a href="#" class="back-to-top">↑</a>
+<script src="script.js"></script>
+</body>
+</html>        
+
+
+
+
+
+
+
